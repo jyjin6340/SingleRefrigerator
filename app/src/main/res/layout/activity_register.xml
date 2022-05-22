@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/button_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/back" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/text_nickname"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="10"
+                android:hint="닉네임"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/binggrae"
+                tools:ignore="TouchTargetSizeCheck"
+                />
+
+            <Button
+                android:id="@+id/button_nickcheck"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_round"
+                android:text="중복확인"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/text_email"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="9"
+                android:hint="이메일 주소"
+                android:fontFamily="@font/binggrae"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/button_email_certification"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_round"
+                android:text="이메일인증"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/certification_code"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/binggrae"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="8"
+                android:hint="인증코드 입력"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/button_code_confirm"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_round"
+                android:text="인증코드 확인"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/text_passwd"
+                        android:layout_width="250dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:hint="비밀번호 (6자리 이상)"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/binggrae"
+                        android:paddingLeft="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="302dp"
+                    android:layout_height="77dp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/text_passwdcheck"
+                        android:layout_width="250dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:hint="비밀번호 확인"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/binggrae"
+                        android:paddingLeft="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_round"
+                android:text="가입하기" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

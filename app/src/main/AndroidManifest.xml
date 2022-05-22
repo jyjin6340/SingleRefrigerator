@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.techtown.sw_project">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_main_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:name=".KakaoApplication"
+        android:theme="@style/Theme.Sw_project">
+        <activity
+            android:name=".Search"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".Login"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="true" >
+
+        </activity>
+
+        <activity android:name=".Find_passwd"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".Upload"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".Upload_ing1"
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity android:name=".Upload_ing2"
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity android:name=".Fridge_add"
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity android:name=".SearchBylist"/>
+
+        <activity android:name=".Mybmark"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Mylike"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Myrecipe"
+            android:exported="true">
+        </activity>
+        <activity android:name=".My_Detail_edit"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Myinfo"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Fridge_remove"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Logout"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".Detail"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- "kakao{YOUR_NATIVE_APP_KEY}://kakaolink" 형식의 앱 실행 스킴을 설정하는데 사용 -->
+                <data android:host="kakaolink"
+                    android:scheme="kakao266b9b767f1c7a24883ddc61a55ddea8" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao${NATIVE_APP_KEY}://oauth" -->
+                <data android:host="oauth"
+                    android:scheme="kakao266b9b767f1c7a24883ddc61a55ddea8" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Myinfo_social"
+            android:exported="true">
+        </activity>
+        <activity android:name=".SetImageActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity android:name=".Fridge_recommend"
+            android:exported="true"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+        <activity android:name=".Appinfo"/>
+        <activity android:name=".SearchTip"
+            android:exported="true">
+        </activity>
+        <activity android:name=".Upload_tip"
+            android:exported="true">
+        </activity>
+        <activity android:name=".My_tip_edit"
+            android:exported="true">
+        </activity>
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+    </application>
+    <queries>
+        <package android:name="com.kakao.talk" />
+    </queries>
+</manifest>

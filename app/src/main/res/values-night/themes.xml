@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Sw_project" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/green_main</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:textViewStyle">@style/nanumTextView</item>
+        <item name="android:buttonStyle">@style/nanumButton</item>
+        <item name="android:editTextStyle">@style/nanumEditText</item>
+        <item name="android:checkboxStyle">@style/nanumCheckBox</item>
+        <item name="android:listViewStyle">@style/nanumListView</item>
+        <item name="android:listPopupWindowStyle">@style/nanumListViewPop</item>
+    </style>
+
+    <style name="nanumTextView" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/binggrae</item>
+    </style>
+    <style name="nanumButton" parent="android:Widget.Button">
+        <item name="android:fontFamily">@font/binggrae</item>
+    </style>
+    <style name="nanumEditText" parent="android:Widget.DeviceDefault.EditText">
+        <item name="android:fontFamily">@font/binggrae</item>
+    </style>
+    <style name="nanumCheckBox" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:fontFamily">@font/binggrae</item>
+    </style>
+    <style name="nanumListView" parent="android:Widget.ListView">
+        <item name="android:fontFamily">@font/binggrae</item>
+    </style>
+    <style name="nanumListViewPop" parent="android:Widget.ListPopupWindow">
+        <item name="android:fontFamily">@font/binggrae</item>
+    </style>
+
+</resources>

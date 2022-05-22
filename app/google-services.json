@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "289186373584",
+    "project_id": "login-ffa64",
+    "storage_bucket": "login-ffa64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289186373584:android:5f1eaa34ec1bf239dea3d5",
+        "android_client_info": {
+          "package_name": "org.techtown.sw_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289186373584-c9enuvatpmqafro3vbcne1mq33lkf000.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.techtown.sw_project",
+            "certificate_hash": "11671591ed1b9760391128cdaaf3c086143b3101"
+          }
+        },
+        {
+          "client_id": "289186373584-tgv1pj8tsb849oii169nfvkpph8ibqfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByNDKqRup7NKLfvpAp_gSYQX65wDbvUWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289186373584-tgv1pj8tsb849oii169nfvkpph8ibqfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

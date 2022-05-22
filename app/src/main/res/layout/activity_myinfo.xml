@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@android:color/transparent"
+                app:civ_border_color="@color/black"
+                android:src="@drawable/mypage"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="닉네임"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/myinfo_name"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/button_nickname"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_round"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0"
+                android:text="중복 확인" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="이메일"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/myinfo_email"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/button_sendmail"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_round"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0"
+                android:text="이메일 인증"/>
+
+            <LinearLayout
+                android:id="@+id/layout_certify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_certify"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="인증번호"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/myinfo_certify"
+                    android:layout_width="250dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_rounded_corner_rectangle"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000000"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/button_certify"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_round"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:text="인증하기"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="비밀번호"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/myinfo_passwd"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/myinfo_passwdcheck"
+                        android:layout_width="250dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/edittext_rounded_corner_rectangle"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:hint="비밀번호 확인"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:textColor="#000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_modify"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_round"
+                android:text="수정하기" />
+
+            <Button
+                android:id="@+id/button_quit"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_round"
+                android:text="회원 탈퇴하기" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

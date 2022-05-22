@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F0D7"
+    android:orientation="vertical"
+    tools:context=".Fragments.Fragment_recipe">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/editText_search"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/binggrae"
+                        android:hint="레시피 이름 또는 사용자로 검색하기"
+                        android:imeActionId="1337"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:paddingLeft="5dp"
+                        android:textCursorDrawable="@drawable/text_cursor"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                    <ImageButton
+                        android:id="@+id/Button_search1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0"
+                        android:background="@android:color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/search"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/layout_button_recent"
+                    android:layout_width="104dp"
+                    android:layout_height="115dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:id="@+id/button_recent"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="0dp"
+                        android:background="#F3F0D7"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/recent_recipe"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:background="#F3F0D7"
+                        android:gravity="center"
+                        android:text="최신 레시피"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout_button_mylike"
+                    android:layout_width="104dp"
+                    android:layout_height="115dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:id="@+id/button_popular"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="0dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/popular_recipe"
+                        android:background="#F3F0D7"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="100dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_height="20dp"
+                        android:background="#F3F0D7"
+                        android:gravity="center"
+                        android:text="인기 레시피"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout_button_honeytip"
+                    android:layout_width="104dp"
+                    android:layout_height="115dp"
+                    android:gravity="center_horizontal|bottom"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:id="@+id/button_honeytip"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:padding="0dp"
+                        android:scaleType="fitCenter"
+                        android:background="#F3F0D7"
+                        android:src="@drawable/honeytip"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:background="#F3F0D7"
+                        android:gravity="center"
+                        android:text="꿀팁"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listView_recipe"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edittext_rounded_corner_rectangle_2" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/button_gotoupload"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/ripple_unbounded"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/upload"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:background="#F3F0D7"
+                    android:layout_marginLeft="305dp"
+                    android:gravity="center"
+                    android:text="레시피 업로드"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_recipe2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/layout_tip"
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:id="@+id/listView_tip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edittext_rounded_corner_rectangle_2" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/button_uploadtip"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/ripple_unbounded"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/upload"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:background="#F3F0D7"
+                    android:layout_marginLeft="305dp"
+                    android:gravity="center"
+                    android:text="꿀팁 업로드"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

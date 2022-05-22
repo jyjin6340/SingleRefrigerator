@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:textAlignment="textEnd">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/button_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/back" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/text_email"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="9"
+                android:hint="이메일 주소"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/button_email_certification"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button_round"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="0dp"
+                android:text="이메일인증" />
+
+            <EditText
+                android:id="@+id/certification_code"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="8"
+                android:hint="인증코드 입력"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/button_code_confirm"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_round"
+                android:text="인증코드 확인" />
+
+
+            <EditText
+                android:id="@+id/text_passwd"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="10"
+                android:hint="새로운 비밀번호"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/text_passwdcheck"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="10"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_round"
+                android:text="비밀번호 변경" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

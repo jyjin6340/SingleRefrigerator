@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F0D7"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/upload_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0"
+                android:src="@drawable/back" />
+
+            <EditText
+                android:id="@+id/text_recipename"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="10"
+                android:hint="요리 이름 입력"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:paddingLeft="10dp" />
+
+            <CheckBox
+                android:id="@+id/checkBox_vegan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:text="비건 레시피인가요?" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text="필수 재료" />
+
+            <ListView
+                android:id="@+id/list_ing1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:choiceMode="multipleChoice"
+                android:background="@drawable/edittext_rounded_corner_rectangle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_del1"
+                    android:layout_width="wrap_content"
+                    android:padding="5dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_round"
+                    android:text="선택한 재료 삭제하기" />
+
+                <Button
+                    android:id="@+id/button_add1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/button_round"
+                    android:onClick="mOnPopupClick"
+                    android:text="필수 재료 추가하기" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text="선택 재료" />
+
+            <ListView
+                android:id="@+id/list_ing2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+
+                android:choiceMode="multipleChoice"
+                android:background="@drawable/edittext_rounded_corner_rectangle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_del2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/button_round"
+                    android:text="선택한 재료 삭제하기" />
+
+                <Button
+                    android:id="@+id/button_add2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:background="@drawable/button_round"
+                    android:layout_marginStart="5dp"
+                    android:text="선택 재료 추가하기" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:text="상세 레시피" />
+            <EditText
+                android:id="@+id/text_recipecontent"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext_rounded_corner_rectangle"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="상세 레시피를 입력해 주세요"
+                android:inputType="textMultiLine"
+                android:textColor="#000000"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/button_upload"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_round"
+                android:layout_marginStart="280dp"
+                android:text="업로드하기" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

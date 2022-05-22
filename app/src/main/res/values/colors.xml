@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#ECD5E3</color> <!--windowtitle, 사용X-->
+    <color name="green_weak">#FFC0A2</color> <!--버튼-->
+    <color name="green_main">#74AA6E</color> <!--상단바, navegation bar-->
+    <color name="teal_200">#D4F0F0</color>
+    <color name="teal_700">#8FCACA</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="background">#F3F0D7</color>
+    <color name="background_popup">#EBE7BE</color>
+    <color name="button_edge">#607A50</color>
+
+</resources>

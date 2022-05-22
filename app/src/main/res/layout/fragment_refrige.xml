@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="나의 냉장고"
+                android:background="@drawable/edittext_rounded_corner_rectangle_3"
+                android:textSize="30sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="597dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fridge2"
+                android:orientation="vertical">
+
+                <GridView
+                    android:id="@+id/gridview3"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/edittext_rounded_corner_rectangle_4"
+                    android:numColumns="3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/ingredient_add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_round"
+                    android:text="+"
+                    android:textColor="@color/button_edge"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/ingredient_remove"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_round"
+                    android:text="-"
+                    android:textColor="@color/button_edge"
+                    android:textSize="30sp"
+                    android:layout_marginBottom="5dp"
+                    tools:ignore="TouchTargetSizeCheck">
+
+                </Button>
+                <ImageButton
+                    android:id="@+id/recommend_recipe"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_round"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/recipe_recommend_2"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
