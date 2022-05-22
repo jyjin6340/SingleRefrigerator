@@ -1,7 +1,7 @@
 # SingleRefrigerator
 KWANGWOON UNIVERSITY_RememberUs
 
-Android Studio를 개발하시며 오류와 싸우고 계신 분들을 위해 저희가 겪은 시행착오들을 말씀드리겠습니다.</br>
+Android Studio를 이용하여 개발하시며 오류와 싸우고 계신 분들을 위해 저희가 겪은 시행착오들을 말씀드리겠습니다.</br>
 이 문제들은 현재 모두 해결하였으며, 코드가 공개되어 있으니 이를 참고하시면 해결 방법을 알 수 있습니다.</br>
 만약 코드를 읽으셔도 알지 못하는 부분이 생기시면 rememberus320@gmail.com로 연락주시거나, Issue 탭에 남겨주세요.</br>
 
