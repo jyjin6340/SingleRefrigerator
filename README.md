@@ -6,9 +6,9 @@ Android Studio를 개발하시며 오류와 싸우고 계신 분들을 위해 �
 만약 코드를 읽으셔도 알지 못하는 부분이 생기시면 rememberus320@gmail.com로 연락주시거나, Issue 탭에 남겨주세요.
 
 1) Fragment 새로고침
-- Fragment에서 새로운 activity로 넘어갔다 왔을 때 정보가 변경되면 Fragment 새로고침이 필요
+: Fragment에서 새로운 activity로 넘어갔다 왔을 때 정보가 변경되면 Fragment 새로고침이 필요
 2) Gridview 사용법
-- Gridview에서 특정 item 선택시 event 발생
+: Gridview에서 특정 item 선택시 event 발생
 3) CustomView 사용법
 4) ListView 사용법
 5) 앱에서 사진 촬영 및 불러오기
