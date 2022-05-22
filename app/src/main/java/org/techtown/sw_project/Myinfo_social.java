@@ -71,8 +71,6 @@ public class Myinfo_social extends Activity {
         button_quit = findViewById(R.id.button_quit);
         text_name = findViewById(R.id.myinfo_name);
         text_email = findViewById(R.id.myinfo_email_social);
-        button_nickcheck = findViewById(R.id.button_nickname);
-        button_nickcheck.setVisibility(View.GONE);
 
         Response.Listener<String> responseListener = new Response.Listener<String>() {
             @Override

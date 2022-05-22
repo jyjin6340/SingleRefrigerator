@@ -31,6 +31,7 @@ import androidx.appcompat.app.AlertDialog;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.kakao.sdk.user.model.User;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -58,7 +59,7 @@ import java.util.Comparator;
 public class Detail extends Activity {
     String UserName, UserId;
     String writer_name, recipe_name, required_ing, selected_ing, howtomake;
-    Integer liked_number, recipe_id, vegan, Uname_exist;
+    Integer liked_number, recipe_id, vegan, Uname_exist, writer_id;
     Integer liked, bookmark;
     TextView text_recipename, text_recipenamebar, writer, recipe1, recipe2, recipe3, like_num;
     ImageView image_vegan, button_like, button_bookmark;
@@ -459,6 +460,7 @@ public class Detail extends Activity {
                                             howtomake = jsonObject.getString("Recipe_content");
                                             vegan = Integer.valueOf(jsonObject.getString("Recipe_vegan"));
                                             writer_name = jsonObject.getString("User_name");
+                                            writer_id=Integer.valueOf(jsonObject.getString("Recipe_userid"));
 
                                             text_recipename = findViewById(R.id.recipename);
                                             text_recipename.setText(recipe_name);
@@ -470,7 +472,7 @@ public class Detail extends Activity {
 
                                             writer = findViewById(R.id.writer);
                                             writer.setText(writer_name);
-                                            if(writer_name.equals(UserName)){
+                                            if(writer_id==Integer.valueOf(UserId)){
                                                 edit_button.setVisibility(View.VISIBLE);
                                                 remove_button.setVisibility(View.VISIBLE);
                                             }
