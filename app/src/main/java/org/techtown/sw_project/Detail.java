@@ -472,9 +472,12 @@ public class Detail extends Activity {
 
                                             writer = findViewById(R.id.writer);
                                             writer.setText(writer_name);
-                                            if(writer_id==Integer.valueOf(UserId)){
-                                                edit_button.setVisibility(View.VISIBLE);
-                                                remove_button.setVisibility(View.VISIBLE);
+                                            if(UserId!=null)
+                                            {
+                                                if(writer_id==Integer.valueOf(UserId)){
+                                                    edit_button.setVisibility(View.VISIBLE);
+                                                    remove_button.setVisibility(View.VISIBLE);
+                                                }
                                             }
 
                                             if(vegan == 1){
